@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  font-family: 'Helvetica Neue';
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  display: flex;
+  background: #292929;
+  justify-content: space-between;
+  align-items: center;
+}
+button,
+.back {
+  font-family: inherit;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  border: 1px solid rgb(109, 109, 109);
+  border-radius: 8px;
+  color: white;
+  background-image: linear-gradient(#525252, #1c1c1c);
+  padding: 10px;
+}
+
+h1 {
+  color: white;
+}
+
+img,
+#logo {
+  width: 60px;
+  margin: 10px 20px 10px 10px;
+}
+
+.arrow {
+  border: solid;
+  border-width: 0 3px 3px 0;
+  margin: 3px;
+  padding: 3px;
+}
+
+.left {
+  transform: rotate(135deg);
+}
+
+.right {
+  transform: rotate(-45deg);
+  color: black;
+}
+
+main {
+  background-image: url('./test1_assets/background.png');
+  background-size: 100% auto;
+  height: 90%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main-container {
+  width: 80vw;
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+#hotel-exterior {
+  width: 100%;
+  border: 5px solid white;
+  margin: 0;
+}
+.hotel-info {
+  align-self: flex-start;
+  margin: 10px 0px;
+  padding-bottom: 20px;
+}
+
+h2 {
+  color: rgb(191, 223, 255);
+  font-weight: 400;
+  margin: 4px;
+}
+
+#phone-number {
+  color: white;
+}
+
+.hotel-link-list {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li {
+  margin-bottom: 2px;
+  height: 60px;
+  color: rgb(6, 87, 163);
+  font-family: inherit;
+  font-size: 1.5em;
+  font-weight: 600;
+  padding: 0px 20px;
+  background-image: linear-gradient(white, rgb(186, 230, 255));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+}
+
+li.top {
+  border-radius: 10px 10px 0px 0px;
+}
+
+li.bottom {
+  border-radius: 0px 0px 10px 10px;
+}
+
+ul a {
+  text-decoration: none;
+}
