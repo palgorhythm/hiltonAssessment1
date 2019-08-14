@@ -18,8 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-button,
-.back {
+button.back {
   font-family: inherit;
   font-size: 20px;
   display: flex;
@@ -30,6 +29,15 @@ button,
   color: white;
   background-image: linear-gradient(#525252, #1c1c1c);
   padding: 10px;
+}
+
+button.back:focus {
+  outline: none;
+}
+
+button.back:hover {
+  background: rgb(46, 46, 46);
+  cursor: pointer;
 }
 
 h1 {
@@ -80,6 +88,7 @@ main {
   width: 100%;
   border: 5px solid white;
   margin: 0;
+  box-shadow: 2px 4px 2px 4px rgba(22, 22, 22, 0.315);
 }
 .hotel-info {
   align-self: flex-start;
@@ -121,6 +130,8 @@ li {
   align-items: center;
   justify-content: space-between;
   margin: 0;
+  border-bottom: 2px solid white;
+  outline: 1px solid rgba(0, 0, 0, 0.246);
 }
 
 li.top {
@@ -133,4 +144,8 @@ li.bottom {
 
 ul a {
   text-decoration: none;
+}
+
+ul a li:hover {
+  background: white;
 }
