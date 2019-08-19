@@ -71,7 +71,7 @@ img,
 main {
   background-image: url('./test1_assets/background.png');
   background-size: 100% auto;
-  height: calc(100vh - 80px);
+  /* height: 110vh; */
   background-position: center;
   display: flex;
   justify-content: center;
