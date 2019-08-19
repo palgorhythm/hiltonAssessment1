@@ -17,6 +17,7 @@ header {
   background: #292929;
   justify-content: space-between;
   align-items: center;
+  height: 80px;
 }
 button.back {
   font-family: inherit;
@@ -42,6 +43,7 @@ button.back:hover {
 
 h1 {
   color: white;
+  margin: 5px 0px;
 }
 
 img,
@@ -69,23 +71,22 @@ img,
 main {
   background-image: url('./test1_assets/background.png');
   background-size: 100% auto;
-  height: 90%;
+  height: calc(100vh - 80px);
   background-position: center;
   display: flex;
   justify-content: center;
 }
 
 .main-container {
-  width: 80vw;
-  max-width: 600px;
+  /* width: 80vw; */
   display: flex;
-  align-items: center;
+  align-items: space-between;
   flex-direction: column;
-  padding: 20px;
+  padding: 20px 0px;
 }
 
 #hotel-exterior {
-  width: 100%;
+  width: 400px;
   border: 5px solid white;
   margin: 0;
   box-shadow: 2px 4px 2px 4px rgba(22, 22, 22, 0.315);
